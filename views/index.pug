@@ -1,0 +1,64 @@
+doctype html
+html
+    head 
+        title This is title
+        style  
+           include ../static/style.css
+    body 
+        nav#navbar
+            div#logo
+                img(src="../static/logo2.png")
+                p VG - Dance Academy
+            ul 
+                li #[a(href='/') Home ]
+                li #[a(href='/') About ]
+                li #[a(href='/') Services ]
+                li #[a(href='/') Class Info]
+                li #[a(href='/') Contact Us]
+        
+        section#introSection 
+            div.big Welcome to VG Dance Academy 
+            div.small Eat Dance Sleep Repeat
+        
+        section#ourMissionSection 
+            h2 Our Mission
+            
+            div.card-container
+
+                div.card
+                    h3 Dance Perfection
+                    div.card-box
+                        div.card-img
+                            img(src="../static/img01.png")
+                        div.card-content
+                            p This is the best Dance Academy of the Universe
+
+                div.card
+                    h3 Dance the way you Like
+                    div.card-box
+                        div.card-img
+                            img(src="../static/img02.png")
+                        div.card-content
+                            p This is the best Dance Academy of the Universe
+
+                div.card
+                    h3 Expert Teaching
+                    div.card-box
+                        div.card-img
+                            img(src="../static/img03.png")
+                        div.card-content
+                            p This is the best Dance Academy of the Universe
+
+        section#sponsersSection 
+            h2 Our Sponsers 
+            div#sponsers
+                img(src="../static/sponsers/fb.png" class="spImage")
+                img(src="../static/sponsers/insta.png" class="spImage")
+                img(src="../static/sponsers/microsoft.png" class="spImage")
+                img(src="../static/sponsers/tally.png" class="spImage")
+
+        footer#footerSection 
+            | Copyright &copy; 2022 | www.vgdanceacademy.com | All rights reserved. 
+
+        script 
+            include ../static/script.js
